@@ -109,7 +109,7 @@ header .title {
 	z-index: -1;
 }
 header .title span {
-	color: #ff9306;
+	color: #ed1c24;
 	font-weight: 300;
 	font-size: 87px;
 	text-transform: uppercase;
@@ -133,7 +133,7 @@ header .title span {
 	position: relative;
 }
 .flag li:first-child a {
-	background: #ff9306;
+	background: #ed1c24;
 }
 .flag li:first-child em {
 	background: url(../img/tr2.png) 0 bottom no-repeat;
@@ -141,7 +141,7 @@ header .title span {
 .flag a {
 	font: italic bold 21px 'Lato';
 	color: #ffffff;
-	background: #ff9306;
+	background: #ed1c24;
 	display: block;
 	padding: 31px 0 22px 0;
 	-webkit-transition: all 0.25s;
@@ -335,7 +335,7 @@ header .title span {
 	background: #f6f6f6 url(../img/banner_bg2.jpg) right 0 no-repeat;
 }
 .thumb-box5 .box .title {
-	color: #ff9306;
+	color: #ed1c24;
 	font: bold italic 38px/1em 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 0;
 }
@@ -343,7 +343,7 @@ header .title span {
 	width: 38px;
 	height: 38px;
 	border-radius: 100%;
-	background: #ff9306;
+	background: #ed1c24;
 	line-height: 38px;
 	text-align: center;
 	color: #ffffff;
@@ -453,7 +453,7 @@ header .title span {
 }
 .errorBox .title {
 	font: 156px/1em 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #ff9306;
+	color: #ed1c24;
 	text-transform: uppercase;
 	margin-bottom: 23px;
 }
@@ -510,7 +510,7 @@ header .title span {
 }
 .thumb-pad2 .thumbnail .badge {
 	border-radius: 100%;
-	background: #ff9306;
+	background: #ed1c24;
 	text-align: center;
 	font: bold italic 36px/67px 'Lato';
 	width: 77px;
@@ -597,7 +597,7 @@ header .title span {
 	transition: all 0.25s;
 }
 .thumb-pad3 .thumbnail .caption a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 .thumb-pad4 {
 	margin: 0;
@@ -647,7 +647,7 @@ header .title span {
 	transition: all 0.25s;
 }
 .thumb-pad5 .thumbnail .caption a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 .thumb-pad5 figure {
 	margin: 0 30px 0 0;
@@ -786,7 +786,7 @@ header .title span {
 }
 .thumb-pad8 .thumbnail .caption time {
 	font: bold 17px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #ff9306;
+	color: #ed1c24;
 	margin-bottom: 1px;
 	display: block;
 }
@@ -807,7 +807,7 @@ header .title span {
 	margin: 0;
 	border-radius: 0;
 	color: #ffffff;
-	background: #ff9306;
+	background: #ed1c24;
 	float: none;
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
@@ -868,7 +868,7 @@ header .title span {
 	margin: 0;
 	border-radius: 0;
 	color: #ffffff;
-	background: #ff9306;
+	background: #ed1c24;
 	text-transform: uppercase;
 	float: none;
 	-webkit-transition: all 0.25s;
@@ -975,7 +975,7 @@ header .title span {
 	transition: all 0.25s;
 }
 .list2 li a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 .list3 {
 	margin: 0;
@@ -1014,7 +1014,7 @@ header .title span {
 }
 .list4 li time {
 	font: bold 17px/27px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #ff9306;
+	color: #ed1c24;
 	float: left;
 	margin: 0 10px 0 0;
 }
@@ -1101,7 +1101,7 @@ header .title span {
 	font-size: 24px;
 	float: left;
 	margin: 0;
-	background: #ff9306;
+	background: #ed1c24;
 	border-radius: 100%;
 	width: 53px;
 	height: 53px;
@@ -1121,7 +1121,7 @@ header .title span {
 	transition: all 0.25s;
 }
 .list7 li a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 .list8 {
 	margin: 0 0 86px 0;
@@ -1296,7 +1296,7 @@ header .title span {
 	width: 90px;
 }
 .info p a {
-	color: #ff9306;
+	color: #ed1c24;
 	text-decoration: underline;
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
@@ -1306,7 +1306,7 @@ header .title span {
 	color: #ffffff;
 }
 .mail {
-	color: #ff9306;
+	color: #ed1c24;
 	font: 17px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	-webkit-transition: all 0.25s;
@@ -1338,7 +1338,7 @@ footer p a {
 	transition: all 0.25s;
 }
 footer p a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 footer em {
 	font-style: normal;
@@ -1372,7 +1372,7 @@ footer em {
 	transition: all 0.25s;
 }
 .follow_icon li a:hover {
-	color: #ff9306;
+	color: #ed1c24;
 }
 /*========================================================
                 RESPONSIVE LAYOUTS STYLES 

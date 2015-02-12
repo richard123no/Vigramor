@@ -1,4 +1,15 @@
+@font-face {
+    font-family: 'erazureregular';
+    src: url('../fonts/erazure-webfont.eot');
+    src: url('../fonts/erazure-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/erazure-webfont.woff2') format('woff2'),
+         url('../fonts/erazure-webfont.woff') format('woff'),
+         url('../fonts/erazure-webfont.ttf') format('truetype'),
+         url('../fonts/erazure-webfont.svg#erazureregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 /**************************
 *
 *	GENERAL
@@ -150,10 +161,9 @@
     color:#fff;
     margin:0;
 }
-.slogan .description {
-    font:300 87px/1em 'Lato';
+.slogan .subtitle {
+    font:300 87px/1em 'erazureregular';
     color:#ff9306;
-    text-transform:uppercase;
     margin:-20px 0 58px 0;
 }
 .slogan p {
