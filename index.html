@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vigramør</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<!-- ANIMATION DISABLED <link rel="stylesheet" href="css/animate.css"> -->
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/easescroller.js"></script>
+<!-- <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script> -->
+
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+   $(window).load(function() {
+     // Initialize the gallery
+    $('.thumb-box2 figure a').touchTouch();
+  });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!--header-->
+<div class="main">
+    <header class="indent">
+        <!-- <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.5s"><a href="index.html"><img src="img/logoNY.jpg" alt="logoNY"></a></h1> -->
+         <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">Roald</span> Kjøtt
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-center navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#historien">Historien</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#produkter">Produkter</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#oppskrifter">Oppskrifter</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#forhandlere">Forhandlere</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+        <ul class="flag">
+            <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Bestill<br>på 123!</a><em></em></li>
+        </ul>
+    </header>
+</div>
+<div class="slider"> 
+    <div class="slogan">
+        <p class="title">Vigramør</p>
+        <p class="description">Roald Kjøtt AS</p>
+        <p>Lokal mattradisjon produsert etter<br>gammel resept</p>
+    </div> 
+    <div class="camera_wrap">
+        <div data-src="img/picture1.jpg"><div class="camera-caption fadeIn"></div></div>
+        <div data-src="img/picture2.jpg"><div class="camera-caption fadeIn"></div></div>
+        <div data-src="img/picture3.jpg"><div class="camera-caption fadeIn"></div></div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div id="historien" class="thumb-box1">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp">
+                        <h2>Om oss</h2>
+                        <div class="thumb-pad4">
+                            <div class="thumbnail">
+                                <figure><img src="img/page2_pic1.jpg" alt=""></figure>
+                                <div class="caption">
+                                    <h3>Vigramør, matkultur på Sunnmøre</h3>
+                                    <p>Fra de tidlige tider har det vært laget mør på bygdene på Vestlandet. Mør er en pølse av en grovmalt blanding svinekjøtt og krydder, i et forhold som gir en særegen smak og som har god holdbarhet. På Vigra er det god tilgang til lokale krydderurter som ble benyttet i produksjonen, men tidligere var det slik at de fleste gårdene hadde sin egen oppskrift. Ikke bare på Vigra men ellers i fylket. Selv om produsentene i hovedsak benyttet samme råstoff, utviklet de enkelte gårdene sin egen særpregne smak ved hjelp av hemmelige oppskrifter som gikk i arv gjennom generasjoner.</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>Vår historie</h2>
+                        <ul class="list4">
+                            <li>
+                                <time datetime="2014-01-01">1850 -</time>
+                                <div class="extra-wrap">
+                                    <p>Ved århundreskifte endret levesettet ved vestkysten av Norge seg drastisk. Fra å hovedsakelig drive jordbruk fikk man utviklet redskap som gav adgang til de store ressursene vi vet havet inneholder. Dette førte til stor etterspørsel av arbeidskraft og dyktige håndverkere til drift av gårdene mens mennene var ute på fiske.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <time datetime="2014-01-01">1900 -</time>
+                                <div class="extra-wrap">
+                                    <p> På begynnelsen av det 20ende århundre gjorde harde levekår i fjordene på Sunnmøre at mange mennesker flyttet ut på kysten og bosatte der.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <time datetime="2014-01-01">1927 -</time>
+                                <div class="extra-wrap">
+                                    <p>Blant disse var Ole Viddal fra Hjørundfjorden. Han var slakter, og flyttet til Vigra i 1927. Med seg hadde han sin egen oppskrift på hvordan mør skulle lages.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <time datetime="2014-01-01">1950 -</time>
+                                <div class="extra-wrap">
+                                    <p>Vigra er av natur veldig godt til grisehold. Øya er flat og er fri for snø og kulde nesten hele året. De fleste gårdene hadde derfor gris som husdyr.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <time datetime="2014-01-01">2009 -</time>
+                                <div class="extra-wrap">
+                                    <p>Oles mør ble etter hvert meget populær slik at flere leverte grisene til slakt hos ham, for så og få Vigramør tilbake. I dag er det fjerde generasjon Viddal, Olav Bjørn Roald som driver tradisjonen videre.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+                        <h2>Tilgjenngelighet</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Maecenas at urna vitae tortor</h3>
+                        <p>Etiam a sem tem pus, convallis nulla at, fermentum tellus. Nam in urn a condimentum pulvinar libero ne c, vehicula turpis. Aliquam varius lorem sed elit vest ibulum lobortis. Proin nec lacus sed</p>
+                        <ul class="list2">
+                            <li><a href="#">Fusce interdum metus et turpis orna</a></li>
+                            <li><a href="#">Fusce consectetur aliquam eraoreet luctus</a></li>
+                            <li><a href="#">Morbi volutpat enim placerat ipsum</a></li>
+                            <li><a href="#">Praesent porttitor congue elnon tempus</a></li>
+                            <li><a href="#">Sed libero purus, vulputate</a></li>
+                        </ul>
+                        <p>Aliquam varius lorem sed elit vest ibulum lobortis. Proin nec lacus sed arcu faucibus porttitor. Integer eget purus placerat, consectetur eros ut, bibendum quam. Vestibulum cursus pretium massa ut sodales neque. Vivamus turpis massa molestie eu elit a, aliq uam consectetur nulla. Donec dictum sapien tortor, vitae fringilla justo pulvinar id. Nulla scelerisque vehicula magna, vitae feugiat torto</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="produkter" class="stellar-section">
+        <div class="thumb-box2" data-stellar-background-ratio="0.1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <p class="title wow fadeInUp">Straight from our oven to you</p>
+                        <p class="description wow fadeInUp" data-wow-delay="0.1s">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <a href="#" class="btn-default btn1 wow fadeInUp" data-wow-delay="0.2s">Read more <em></em></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="oppskrifter" class="thumb-box3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 wow fadeIn">
+                    <p class="title">Oppskrifter</p>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp text-left">
+                <div class="thumb-pad2">
+                    <div class="thumbnail">
+                        <div class="badge">1</div>
+                        <div class="caption">
+                            <p>
+                                <h3>Julemiddag</h3>
+                                Kok opp rikelig vann i en kjele,legg vigramøren i  gi et nytt oppkok, la den videre trekke i ca 35-40 min.
+                                Deles opp i servering stykker etter Møren er ferdig kokt.<br />
+                                Svineribbe<br />
+                                Fåreribbe<br />
+                                Poteter<br />
+                                Tilbehør etter ønske.
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="thumb-pad2">
+                    <div class="thumbnail">
+                        <div class="badge">2</div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="thumb-pad2">
+                    <div class="thumbnail">
+                        <div class="badge">3</div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="thumb-pad2">
+                    <div class="thumbnail">
+                        <div class="badge">3</div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="forhandlere" class="stellar-section">
+        <div class="thumb-box4" data-stellar-background-ratio="0.1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <p class="title wow fadeInUp">All sorrows are less with bread</p>
+                        <p class="description wow fadeInUp" data-wow-delay="0.1s">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <a href="#" class="btn-default btn1 wow fadeInUp" data-wow-delay="0.2s">Read more <em></em></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="kontakt" class="thumb-box5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInLeft">
+                    <div class="box box1">
+                        <p class="title">Bestill Online</p>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <a href="#" class="fa fa-angle-right"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInRight">
+                    <div class="box box2">
+                        <p class="title">Denne Slettes</p>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <a href="#" class="fa fa-angle-right"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content_map">
+      <div class="google-map-api"> 
+        <div id="map-canvas" class="gmap"></div> 
+      </div> 
+</section>
+<!--footer-->
+<footer>
+    <div class="container">
+        <p class="wow fadeInDown">Bread bakery &copy; <em id="copyright-year"></em>. <a href="index-5.html">Privacy Policy</a></p>
+        <ul class="follow_icon wow fadeInUp">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+        </ul>
+    </div>
+  More Bakery Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/bakery-website-templates/" target="_blank">TemplateMonster.com</a>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript"> 
+          google_api_map_init(); 
+          function google_api_map_init(){ 
+            var map; 
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14)); 
+            var markCoord1 = new google.maps.LatLng(parseFloat(40.643180), parseFloat(-73.9874068,14)); 
+             var markCoord2 = new google.maps.LatLng(parseFloat(40.6522180), parseFloat(-73.9984068,14)); 
+             var markCoord3 = new google.maps.LatLng(parseFloat(40.6480000), parseFloat(-73.9724068,14)); 
+             var markCoord4 = new google.maps.LatLng(parseFloat(40.6442180), parseFloat(-73.9664068,14)); 
+             var markCoord5 = new google.maps.LatLng(parseFloat(40.6379180), parseFloat(-73.9552068,14)); 
+            var marker; 
+ 
+            var styleArray = [
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#acbcc9"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "stylers": [
+            {
+                "color": "#f2e5d4"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#c5c6c6"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e4d7c6"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#fbfaf7"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#c5dac6"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": 33
+            }
+        ]
+    },
+    {
+        "featureType": "road"
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {},
+    {
+        "featureType": "road",
+        "stylers": [
+            {
+                "lightness": 20
+            }
+        ]
+    }
+]
+             
+            var markerIcon = { 
+                url: "img/gmap_marker.png", 
+                size: new google.maps.Size(104, 104), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(21, 70) 
+            }; 
+            var markerIcon2 = { 
+                url: "img/gmap_marker2.png", 
+                size: new google.maps.Size(104, 104), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(21, 70) 
+            };
+            function initialize() { 
+              var mapOptions = { 
+                zoom: 14, 
+                center: coordData, 
+                scrollwheel: false, 
+                styles: styleArray 
+              } 
+ 
+              var contentString = "<div></div>"; 
+              var infowindow = new google.maps.InfoWindow({ 
+                content: contentString, 
+                maxWidth: 200 
+              }); 
+               
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+              marker = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord1, 
+                icon: markerIcon
+              }); 
+
+              marker1 = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord2, 
+                icon: markerIcon2
+              }); 
+
+               marker2 = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord3, 
+                icon: markerIcon
+              }); 
+
+               marker3 = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord4, 
+                icon: markerIcon2
+              }); 
+
+               marker4 = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord5, 
+                icon: markerIcon
+              });
+
+               var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+                var contentString1 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+                var contentString2 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+                var contentString3 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+                var contentString4 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>4578 Marmora Road, Glasgow D04 89GR <span>800 2345-6789</span></p>'+
+                '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var infowindow1 = new google.maps.InfoWindow({
+                content: contentString1
+            });
+
+            var infowindow2 = new google.maps.InfoWindow({
+                content: contentString2
+            });
+
+            var infowindow2 = new google.maps.InfoWindow({
+                content: contentString3
+            });
+
+            var infowindow2 = new google.maps.InfoWindow({
+                content: contentString4
+            });
+
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            google.maps.event.addListener(marker1, 'click', function() {
+              infowindow.open(map,marker1);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            google.maps.event.addListener(marker2, 'click', function() {
+              infowindow.open(map,marker2);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            google.maps.event.addListener(marker3, 'click', function() {
+              infowindow.open(map,marker3);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            google.maps.event.addListener(marker4, 'click', function() {
+              infowindow.open(map,marker4);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+
+              map.setCenter(coordData);
+
+              var center = map.getCenter();
+            });
+          }
+
+            google.maps.event.addDomListener(window, "load", initialize); 
+
+          }    
+</script>
+</body>
+</html>
