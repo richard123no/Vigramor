@@ -33,7 +33,7 @@ p {
 	line-height: 27px;
 }
 h1.navbar-brand_ {
-	margin: 31px 0 0 0;
+	margin: 0px 0 0 0;
 	padding: 0;
 	float: left;
 	height: auto;
@@ -123,6 +123,9 @@ header .title span {
 	top: 0;
 	right: 76px;
 	z-index: 9999999999;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 .flag li {
 	display: block;
@@ -133,31 +136,25 @@ header .title span {
 	position: relative;
 }
 .flag li:first-child a {
-	background: #ed1c24;
+	
 }
 .flag li:first-child em {
-	background: url(../img/tr2.png) 0 bottom no-repeat;
+	
 }
 .flag a {
 	font: italic bold 21px 'Lato';
 	color: #ffffff;
-	background: #ed1c24;
 	display: block;
-	padding: 31px 0 22px 0;
-	-webkit-transition: all 0.25s;
-	-o-transition: all 0.25s;
-	transition: all 0.25s;
+	padding: 0px 0 22px 0;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 .flag a:hover {
-	color: #5c5c5c;
+	
 }
 .flag em {
-	background: url(../img/tr1.png) 0 bottom no-repeat;
-	width: 100%;
-	height: 32px;
-	position: absolute;
-	bottom: -32px;
-	left: 0;
+
 }
 /* menu
 ========================================================*/
@@ -171,6 +168,7 @@ header .title span {
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    margin-top: -5px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -497,7 +495,7 @@ header .title span {
 .thumb-pad2 {
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 }
 .thumb-pad2 .thumbnail {
 	position: relative;
@@ -1485,6 +1483,7 @@ footer em {
 }
  header .flag {
  right: 30px;
+ width: 72px;
 }
  header .flag li {
  width: 72px;
