@@ -70,10 +70,10 @@ h3 {
 	background: #ffffff;
 }
 .content.indent.pict1 {
-	background: #ffffff url(../img/bg_pic1.png) right center no-repeat;
+	background: #ffffff url(../img/vigra2.jpg) right center no-repeat;
 }
 .content.indent.pict2 {
-	background: #ffffff url(../img/bg_pic1.png) right bottom no-repeat;
+	background: #ffffff url(../img/vigra2.jpg) right bottom no-repeat;
 }
 .center {
 	text-align: center;
@@ -272,7 +272,7 @@ header .title span {
 	overflow: hidden;
 	background-position: 100% 100%;
 	position: relative;
-	background-image: url(../img/bg_pic1.jpg);
+	background-image: url(../img/vigra2.jpg);
 	text-align: center;
 }
 .thumb-box2 .title {
@@ -306,7 +306,7 @@ header .title span {
 	overflow: hidden;
 	background-position: 100% 100%;
 	position: relative;
-	background-image: url(../img/bg_pic3.jpg);
+	background-image: url(../img/vigra3.jpg);
 	text-align: center;
 }
 .thumb-box4 .title {
@@ -402,7 +402,7 @@ header .title span {
 .thumb-box11 {
 	overflow: hidden;
 	padding: 64px 0 47px 0;
-	background: #ffffff url(../img/bg_pic11.jpg) right top no-repeat;
+	background: #ffffff url(../img/vigra21.jpg) right top no-repeat;
 	text-align: center;
 }
 .thumb-box11 h2 {
@@ -441,7 +441,7 @@ header .title span {
 	background-position: 100% 100%;
 	position: relative;
 	text-align: center;
-	background-image: url(../img/bg_pic10.jpg);
+	background-image: url(../img/vigra20.jpg);
 }
 .thumb-box14 h2 {
 	color: #ffffff;
