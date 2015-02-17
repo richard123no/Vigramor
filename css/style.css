@@ -127,6 +127,18 @@ header .title span {
 	-o-transition: all 0.25s ease;
 	transition: all 0.25s ease;
 }
+
+.flag .godmatflagg {
+	max-width:80%;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.flag .godmatflagg:hover {
+	max-width:85%;
+}
+
 .flag li {
 	display: block;
 	float: left;
@@ -171,6 +183,14 @@ header .title span {
     margin-top: -5px;
 }
 
+.navbar-custom .navbar-nav li a {
+	color: white;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+	background: rgba(255,255,255,.5);
+}
+
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
@@ -179,6 +199,14 @@ header .title span {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
+}
+
+.navbar-custom button.navbar-toggle.collapsed {
+	background: rgba(255,255,255,.9);
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #777;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -204,8 +232,8 @@ header .title span {
 .navbar {
     padding: 20px 0;
     border-bottom: 0;
-    letter-spacing: 1px;
     background: 0 0;
+    letter-spacing: 1px;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -217,9 +245,24 @@ header .title span {
     }
 
 .navbar-custom .top-nav-collapse {
-        border-bottom: 1px solid rgba(0,0,0,.6);
+        border-bottom: 1px solid rgba(0,0,0,.8);
     }
 
+.navbar-collapse.collapse.in {
+	background: rgba(0,0,0,.8);
+	z-index: 999999999999;
+	-webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border-color: #666;
+}
+
+.navbar-toggle {
+	margin-right: 80px;
+}
 /*========================================================
                     -Content-
 =========================================================*/
@@ -270,7 +313,7 @@ header .title span {
 	overflow: hidden;
 	background-position: 100% 100%;
 	position: relative;
-	background-image: url(../img/vigra2.jpg);
+	background-image: url(../img/vigra2v2.jpg);
 	text-align: center;
 }
 .thumb-box2 .title {
@@ -304,7 +347,7 @@ header .title span {
 	overflow: hidden;
 	background-position: 100% 100%;
 	position: relative;
-	background-image: url(../img/vigra3.jpg);
+	background-image: url(../img/vigra3v2.jpg);
 	text-align: center;
 }
 .thumb-box4 .title {
@@ -517,6 +560,7 @@ header .title span {
 }
 .thumb-pad2 .thumbnail .caption {
 	padding: 0;
+	font-weight: 300;
 }
 .thumb-pad2-1 {
 	margin: 0 0 30px 0;
@@ -718,7 +762,7 @@ header .title span {
 	display: block;
 	background: #4a4a4a url(../img/zoom.png) center center no-repeat;
 	background: rgba(74, 74, 74, 0.5) url(../img/zoom.png) center center no-repeat;
-	font-weight: normal;
+	font-weight: 300;
 	-webkit-transform: translateY(0) translateX(0) scale(0.25);
 	transform: translateY(0) translateX(0) scale(0.25);
 	-webkit-transition: all 0.35s;
@@ -959,14 +1003,14 @@ header .title span {
 	list-style: none;
 }
 .list2 li {
-	font-size: 17px;
+	font-size: 15px;
 	line-height: 1.428571429;
 	margin: 0 0 6px 0;
 	padding-left: 17px;
 	background: url(../img/list_arrow.png) left 6px no-repeat;
 }
 .list2 li a {
-	font: 300 17px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 15px 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000000;
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
@@ -1482,7 +1526,7 @@ footer em {
  top: -20px;
 }
  header .flag {
- right: 30px;
+ right: 9px;
  width: 72px;
 }
  header .flag li {
@@ -1641,3 +1685,26 @@ footer em {
 /*Core variables and mixins*/
 /*-------------------------------------------------*/
 /*-------------------------------------------------*/
+
+/* Special changes */
+/*-------------------------------------------------*/
+
+/* Creating white space in place of the hidden h2 */ 
+
+@media (min-width: 992px) {
+	 .kolonne1 {
+	 	margin-top: 115px;
+	}
+}
+
+.godmat123link {
+	max-width: 12%;
+	margin-top:20px;
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+
+.godmat123link:hover {
+	max-width: 13%;
+}

@@ -26,6 +26,7 @@
 <script src="js/camera.js"></script>
 <script src="js/touchTouch.jquery.js"></script>
 <script src="js/easescroller.js"></script>
+<script src="js/logoswitch.js"></script>
 <!-- <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script> -->
 
 <script>
@@ -70,24 +71,29 @@
         <header class="indent">
             <!-- <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.5s"><a href="index.html"><img src="img/logoNY.jpg" alt="logoNY"></a></h1> -->
             <!-- Navigation -->
-            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <nav id="hovedmeny" class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
                 <div class="container">
-                    <div class="navbar-header col-xs-2">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"></button>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <a class="navbar-brand page-scroll" href="#page-top">
-                            <img src="img/Roald-Kjottlogo.png" style="max-width:100%" alt="Roald Kjøtt" title="Roald Kjøtt" />
+                            <img id="hvitlogo" src="img/Roald-Kjottlogo-white.png" style="max-width:150px;" alt="Roald Kjøtt" title="Roald Kjøtt" />
                         </a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
-                        <ul class="nav navbar-nav">
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
                             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                             <li class="hidden">
                                 <a href="#page-top"></a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="#historien">Historien</a>
+                                <a class="page-scroll" href="#historien">Om oss</a>
                             </li>
                             <li>
                                 <a class="page-scroll" href="#forhandlere">Forhandlere</a>
@@ -110,8 +116,8 @@
                 <!-- /.container -->
             </nav>
             <ul class="flag">
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="http://123.no/produkt/vigram%C3%B8r" target="_blank"><img src="img/godmat_flag.png" style="max-width:100%" /></a><em></em></li>
-            </ul>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="http://123.no/produkt/vigram%C3%B8r" target="_blank"><img src="img/godmat_flag.png" class="godmatflagg" /></a><em></em></li>
+            </ul> 
         </header>
     </div>
     <div class="slider">
@@ -132,8 +138,8 @@
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp ">
-                        <h2>Historien</h2>
-                        <div class="thumb-pad4">
+                        <h2 class="visible-xs" style="margin-top: 20px">Om oss</h2>
+                        <div class="thumb-pad4 kolonne1">
                             <div class="thumbnail">
                                 <figure><img src="img/vigra1.jpg" alt=""></figure>
                                 <div class="caption">
@@ -147,51 +153,83 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h2> &nbsp; <!-- Overskriften i midten på side 2--></h2>
-                        <ul class="list4 text-left">
-                            <li>
-                                <time datetime="2014-01-01">1850 -</time>
-                                <div class="extra-wrap">
-                                    <p>Ved århundreskifte endret levesettet ved vestkysten av Norge seg drastisk. Fra å hovedsakelig drive jordbruk fikk man utviklet redskap som gav adgang til de store ressursene vi vet havet inneholder. Dette førte til stor etterspørsel av arbeidskraft og dyktige håndverkere til drift av gårdene mens mennene var ute på fiske.</p>
+                        <h2 class="hidden-xs" style="margin-top: 20px">Om oss</h2>
+                        <div class="thumb-pad4">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <p class="text-left">
+                                        <b>1850 -</b><br />
+                                        Ved århundreskifte endret levesettet ved vestkysten av Norge seg drastisk. Fra å hovedsakelig drive jordbruk fikk man utviklet redskap som gav adgang til de store ressursene vi vet havet inneholder. Dette førte til stor etterspørsel av arbeidskraft og dyktige håndverkere til drift av gårdene mens mennene var ute på fiske.
+                                    </p>
+                                    <p class="text-left">
+                                        <b>1927</b> -<br />
+                                        På begynnelsen av det 20ende århundre gjorde harde levekår i fjordene på Sunnmøre at mange mennesker flyttet ut på kysten og bosatte der.
+                                    </p>
+                                    <p class="text-left">
+                                        Blant disse var Ole Viddal fra Hjørundfjorden. Han var slakter, og flyttet til Vigra i 1927. Med seg hadde han sin egen oppskrift på hvordan mør skulle lages.
+                                    </p>
+                                    <p class="text-left">
+                                        <b>1950</b> -<br />
+                                        Vigra er av natur veldig godt til grisehold. Øya er flat og er fri for snø og kulde nesten hele året. De fleste gårdene hadde derfor gris som husdyr.
+                                    </p>
+                                    <p class="text-left">
+                                        <b>2009</b> -<br />
+                                        Oles mør ble etter hvert meget populær slik at flere leverte grisene til slakt hos ham, for så og få Vigramør tilbake. Siden 2009 har det vært fjerde generasjon Viddal, Olav Bjørn Roald som driver tradisjonen videre!
+                                    </p>
                                 </div>
-                            </li>
-                            <li>
-                                <time datetime="2014-01-01">1900 -</time>
-                                <div class="extra-wrap">
-                                    <p> På begynnelsen av det 20ende århundre gjorde harde levekår i fjordene på Sunnmøre at mange mennesker flyttet ut på kysten og bosatte der.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <time datetime="2014-01-01">1927 -</time>
-                                <div class="extra-wrap">
-                                    <p>Blant disse var Ole Viddal fra Hjørundfjorden. Han var slakter, og flyttet til Vigra i 1927. Med seg hadde han sin egen oppskrift på hvordan mør skulle lages.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <time datetime="2014-01-01">1950 -</time>
-                                <div class="extra-wrap">
-                                    <p>Vigra er av natur veldig godt til grisehold. Øya er flat og er fri for snø og kulde nesten hele året. De fleste gårdene hadde derfor gris som husdyr.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <time datetime="2014-01-01">2009 -</time>
-                                <div class="extra-wrap">
-                                    <p>Oles mør ble etter hvert meget populær slik at flere leverte grisene til slakt hos ham, for så og få Vigramør tilbake. Siden 2009 har det vært fjerde generasjon Viddal, Olav Bjørn Roald som driver tradisjonen videre!</p>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+
+                        <!--
+                            <ul class="list4 text-left">
+                                <li>
+                                    <time datetime="2014-01-01">1850 -</time>
+                                    <div class="extra-wrap">
+                                        <p>Ved århundreskifte endret levesettet ved vestkysten av Norge seg drastisk. Fra å hovedsakelig drive jordbruk fikk man utviklet redskap som gav adgang til de store ressursene vi vet havet inneholder. Dette førte til stor etterspørsel av arbeidskraft og dyktige håndverkere til drift av gårdene mens mennene var ute på fiske.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2014-01-01">1900 -</time>
+                                    <div class="extra-wrap">
+                                        <p> På begynnelsen av det 20ende århundre gjorde harde levekår i fjordene på Sunnmøre at mange mennesker flyttet ut på kysten og bosatte der.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2014-01-01">1927 -</time>
+                                    <div class="extra-wrap">
+                                        <p>Blant disse var Ole Viddal fra Hjørundfjorden. Han var slakter, og flyttet til Vigra i 1927. Med seg hadde han sin egen oppskrift på hvordan mør skulle lages.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2014-01-01">1950 -</time>
+                                    <div class="extra-wrap">
+                                        <p>Vigra er av natur veldig godt til grisehold. Øya er flat og er fri for snø og kulde nesten hele året. De fleste gårdene hadde derfor gris som husdyr.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2014-01-01">2009 -</time>
+                                    <div class="extra-wrap">
+                                        <p>Oles mør ble etter hvert meget populær slik at flere leverte grisene til slakt hos ham, for så og få Vigramør tilbake. Siden 2009 har det vært fjerde generasjon Viddal, Olav Bjørn Roald som driver tradisjonen videre!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            -->
+
                     </div>
 
                     <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
-                        <h2>Matsikkerhet<br /></h2>
+                        <h2> &nbsp; <!-- Overskriften over spalten til høyre--> <br /></h2>
                         <h3>Sikring av høy kvalitet i alle ledd</h3>
-                        <p class="text-left">For å sikre at produktene som produseres og serveres er helsemessig trygge, har Roald Kjøtt tette samarbeid med relevante aktører utover krav fra Mattilsynet.</p>
+                        <p class="text-left">
+                            Vigramøren inneholder ingen form for stivelse eller tilsetningsstoffer. Vi benytter kun svinekjøtt og spekk i produksjonen. Svinekjøttet er levert av Ringdal AS. De leverer norsk kjøtt av beste kvalitet. Vigramøren inneholder ingen form for stivelse, melk eller soya/melkeproteiner, og kan derfor trygt nytes av de som har matallergi eller matintoleranse.
+                        <p class="text-left">
+                            For å sikre at produktene som produseres og serveres er helsemessig trygge, har Roald Kjøtt tette samarbeid med relevante aktører utover krav fra Mattilsynet.
                         <ul class="list2">
-                            <li class="text-left"><a href="#">EFTA godkjenningsnummer "NORGE 264"</a></li>
-                            <li class="text-left"><a href="#">Tett samarbeid med Anticimex</a></li>
-                            <li class="text-left"><a href="#">Medlem nummer 43563 i "Grønt Punkt"</a></li>
-                            <li class="text-left"><a href="#">Registrert i EPD basen hos Trade Solution</a></li>
-                            <li class="text-left"><a href="#">Internkontroll ihht HACCP (Hazard Analysis and Critical Control Point)</a></li>
+                            <li class="text-left">EFTA godkjenningsnummer "NORGE 264"</li>
+                            <li class="text-left">Tett samarbeid med Anticimex</li>
+                            <li class="text-left">Medlem nummer 43563 i "Grønt Punkt"</li>
+                            <li class="text-left">Registrert i EPD basen hos Trade Solution</li>
+                            <li class="text-left">Internkontroll ihht HACCP (Hazard Analysis and Critical Control Point)</li>
                         </ul>
                         <p class="text-left">Vårt utvidede samarbeid med ledende aktører innen kvalitetskontroll gjør at vi til enhver tid sikrer høy kvalitet på produksjon og dermed høy kvalitet på våre produkter.</p>
                         <p class="text-left">Det legges ned mye tid og arbeid for å sikre at produktene som produseres er helsemessig trygge.</p>
@@ -208,7 +246,45 @@
                     <div class="row">
                         <div class="col-lg-10 col-lg-offset-1">
                             <p class="title wow fadeInUp">Forhandlere</p>
-                            <p class="description wow fadeInUp" data-wow-delay="0.1s">Vi leverer Vigramør til mange butikker på Sunnmøre. Du finner oss hos Kiwi, Joker, Rimi, Eurospar, Spar, Coop og Bunnpris.<br /><br /> I november og desember får du kjøpt fersk Vigramør fra fabrikk utsalget til Roald Kjøtt på Vigra. Veibeskrivelse i kartet nedenfor.<br /><br/>Bor du utenfor Sunnmøre? Husk at du kan kjøpe Vigramøren året rundt på <a href="http://123.no/produkt/vigram%C3%B8r" target="_blank">God Mat på 123!</a></p>
+                                <div style="margin-bottom:10px; margin-top: 30px;" class="row">
+                                    <div class="col-md-6">
+                                        <div class="row" style="margin-bottom: 10px;">
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/kiwi.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/rimi.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/rema1000.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/coop.png" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/bunnpris.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/joker.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/spar.png" style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                        <img src="./img/logo/eurospar.png" style="max-width: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <p class="description wow fadeInUp" data-wow-delay="0.1s">
+                                Vi leverer Vigramør til mange butikker på Sunnmøre.<br />
+                                I november og desember får du kjøpt fersk Vigramør fra fabrikkutsalget til Roald Kjøtt på Vigra. Veibeskrivelse i kartet nedenfor.<br /><br />Bor du utenfor Sunnmøre? Kjøp Vigramøren året rundt hos: <br />
+                                    <a href="http://123.no/produkt/vigram%C3%B8r" target="_blank"><img src="./img/logo/godmat123.png" class="godmat123link"></a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -227,11 +303,11 @@
                 <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp text-left">
                     <div class="thumb-pad2">
                         <div class="thumbnail">
-                            <div class="img-responsive center-block"><img style="max-width:100%;" src="img/1-julemiddag.png" alt="Julemiddag" title="Julemiddag"></div>
+                            <div class="img-responsive center-block"><img style="margin-left: 10%; max-width:80%;" src="img/1-julemiddag.png" alt="Julemiddag" title="Julemiddag"></div>
                             <div class="caption">
                                 <p>
                                     <h3 class="text-center">Julemiddag</h3>
-                                    Kok opp rikelig vann i en kjele. Legg i Vigramøren og gi et nytt oppkok. La den videre trekke i ca 35-40 min. Deles opp i passelige biter før servering. Passer utmerket til pinnekjøtt, svineribbe, rødkål, surkål og poteter.
+                                    Kok opp rikelig vann i en kjele. Legg i Vigramøren, nytt oppkok.La den trekke ca 35-40 min. Deles opp i passelige biter før servering. Passer utmerket til pinnekjøtt, svineribbe, rødkål, surkål og poteter!
                                 </p>
                             </div>
                         </div>
@@ -240,7 +316,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="thumb-pad2">
                         <div class="thumbnail">
-                            <div class="img-responsive center-block"><img style="max-width:100%;" src="img/2-stormsuppe.png" alt="Stormsuppe / Brennsnut" title="Stormsuppe / Brennsnut"></div>
+                            <div class="img-responsive center-block"><img style="margin-left: 10%; max-width:80%;" src="img/2-stormsuppe.png" alt="Stormsuppe / Brennsnut" title="Stormsuppe / Brennsnut"></div>
                             <div class="caption">
                                 <p>
                                     <h3 class="text-center">Stormsuppe / Brentsnut</h3>
@@ -253,7 +329,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="thumb-pad2">
                         <div class="thumbnail">
-                            <div class="img-responsive center-block"><img style="max-width:100%;" src="img/3-potetball.png" alt="Potetball / Komle" title="Potetball / Komle"></div>
+                            <div class="img-responsive center-block"><img style="margin-left: 10%; max-width:80%;" src="img/3-potetball.png" alt="Potetball / Komle" title="Potetball / Komle"></div>
                             <div class="caption">
                                 <p>
                                     <h3 class="text-center">Potetball / Komle</h3>
@@ -266,7 +342,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="thumb-pad2">
                         <div class="thumbnail">
-                            <div class="img-responsive center-block"><img style="max-width:100%;" src="img/4-brennsnut-thai.png" alt="Vigramor thai style" title="Vigramor thai style"></div>
+                            <div class="img-responsive center-block"><img style="margin-left: 10%; max-width:80%;" src="img/4-brennsnut-thai.png" alt="Vigramor thai style" title="Vigramor thai style"></div>
                             <div class="caption">
                                 <p>
                                     <h3 class="text-center">Stekt Vigramør, "Thai-Style"</h3>
@@ -276,6 +352,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
+                <div class="row">Last ned oppskriftene på PDF</div>
             </div>
         </div>
 
@@ -285,7 +363,7 @@
                     <div class="row">
                         <div class="col-lg-10 col-lg-offset-1">
                             <p class="title wow fadeInUp">Kontakt oss</p>
-                            <p class="description wow fadeInUp" data-wow-delay="0.1s">Her skal vi lege inn en beskrivelse av veien til Road Køtt med telefonnummer og ale godsakene. Kanskje et bilde av et kart eller lignende.</p>
+                            <p class="description wow fadeInUp" data-wow-delay="0.1s">Telefon: 988 71 275, epost: obr@mimer.no</p>
                         </div>
                     </div>
                 </div>
@@ -306,7 +384,6 @@
             </div>
         </div>
         -->
-
         <!--
         <div id="kontakt" class="thumb-box5">
             <div class="container">
@@ -620,4 +697,5 @@
         }
     </script>
 </body>
+
 </html>

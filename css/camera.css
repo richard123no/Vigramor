@@ -161,11 +161,30 @@
     color:#fff;
     margin:0;
 }
+
+@media (max-width: 767px) {
+    .slogan .title {font-size: 4em;margin-bottom:20px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slogan .title {font-size: 5em;margin-bottom:20px}
+}
+
 .slogan .subtitle {
     font:300 87px/1em 'erazureregular';
-    color:#ff9306;
-    margin:-20px 0 58px 0;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2);
+    color:#000;
+
 }
+
+@media (max-width: 767px) {
+    .slogan .subtitle {font-size: 3em;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slogan .subtitle {font-size: 4em;}
+}
+
 .slogan p {
     font:italic 100 58px/67px 'Lato';
     color:#fff;
