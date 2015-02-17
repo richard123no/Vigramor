@@ -11,9 +11,11 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #ff0000;
 }
 a:hover {
 	text-decoration: none;
+	color: #a50000;
 }
 a:focus {
 	text-decoration: none;
